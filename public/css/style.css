@@ -1,0 +1,28 @@
+* {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    border-bottom: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.form {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.container-users {
+    max-width: 650px;
+    min-width: 200px;
+    margin: 0 auto;
+}

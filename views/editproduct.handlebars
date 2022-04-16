@@ -1,0 +1,15 @@
+<h1>Editar Produto</h1>
+<form action="/update/{{data.id}}" method="post" class="form">
+    <input type="hidden" name="id" value="{{data.id}}">
+    <div class="mb-3">
+        <label for="name" class="form-label">Nome do produto</label>
+        <input type="text" name="nameProduct" class="form-control" placeholder="Digite o Nome do Produto"
+            value="{{data.nameProduct}}">
+    </div>
+    <div class="mb-3">
+        <label for="name" class="form-label">Valor do produto</label>
+        <input type="text" name="valueProduct" class="form-control" placeholder="Digite o Valor do Produto"
+            value="{{data.valueProduct}}">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Editar">
+</form>
