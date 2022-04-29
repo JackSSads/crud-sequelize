@@ -20,7 +20,8 @@ const Address = db.define("Address", {
     },
 });
 
-User.hasMany(Address); // um usuário tem vários endereços (1 M)
+// Relacionamento 1 M
+User.hasMany(Address); 
 Address.belongsTo(User);
 
 module.exports = Address;
