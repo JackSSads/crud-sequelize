@@ -1,15 +1,16 @@
-<h1>Criar Produtos</h1>
-<div>
-    <form action="/addproducts" method="post" class="form">
-        <div class="mb-3">
-            <label for="name" class="form-label">Nome do produto</label>
-            <input type="text" name="nameProduct" class="form-control" placeholder="Digite o Nome do Produto" required>
-        </div>
-        <div class="mb-3">
-            <label for="name" class="form-label">Valor do produto</label>
-            <input type="text" name="valueProduct" class="form-control" placeholder="Digite o Valor do Produto"
-                required>
-        </div>
-        <input type="submit" class="btn btn-primary container" value="Cadastrar">
-    </form>
+<h1>Usuários cadastrados</h1>
+<div class="container">
+  {{#each users}}
+  <div class="item">
+    <h2>{{this.name}}</h2>
+    <p>{{this.occupation}}</p>
+    <div class="actions">
+      <form action="/users/delete/{{this.id}}" method="POST">
+        <a href="/users/{{this.id}}" class="details-btn">Ver detalhes</a>
+        <a href="/users/edit/{{this.id}}" class="details-btn">Editar</a>
+        <input type="submit" value="Excluir" class="delete-btn">
+      </form>
+    </div>
+  </div>
+  {{/each}}
 </div>

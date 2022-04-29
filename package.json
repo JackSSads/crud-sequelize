@@ -1,5 +1,5 @@
 {
-  "name": "sequelize",
+  "name": "1_inatalacao_mysql",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,12 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3",
-    "express-handlebars": "^6.0.5",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.15",
-    "sequelize": "^6.19.0"
+    "sequelize": "^6.17.0"
   },
-  "devDependencies": {},
   "description": ""
 }
